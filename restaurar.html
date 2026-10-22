@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+		<meta name="text-scale" content="scale" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="theme-color" content="#c2410c" />
+		<link rel="manifest" href="./manifest.webmanifest" />
+		<link rel="apple-touch-icon" href="./icon-192.png" />
+		<script>
+			// Autocorreção: se um arquivo de código do app não carregar (cópia antiga de uma
+			// versão já substituída no site), apaga as cópias guardadas do app (service worker
+			// e caches) e recarrega, uma vez. A conta e as conversas ficam no IndexedDB, que
+			// não é tocado. Fica aqui, e não no código do app, porque é justamente ele que falha.
+			(function () {
+				var KEY = 'lerolero.recuperacao';
+				function broken(reason) {
+					var msg = String((reason && reason.message) || reason || '');
+					return /dynamically imported module|Importing a module script failed|loading dynamically imported module/i.test(msg);
+				}
+				async function recover() {
+					try {
+						if (sessionStorage.getItem(KEY)) return; // já tentou nesta sessão: não entra em laço
+						sessionStorage.setItem(KEY, '1');
+					} catch (e) {
+						return;
+					}
+					try {
+						var regs = navigator.serviceWorker ? await navigator.serviceWorker.getRegistrations() : [];
+						await Promise.all(regs.map(function (r) { return r.unregister(); }));
+						var keys = window.caches ? await caches.keys() : [];
+						await Promise.all(keys.map(function (k) { return caches.delete(k); }));
+					} catch (e) {}
+					location.reload();
+				}
+				addEventListener('unhandledrejection', function (e) { if (broken(e.reason)) recover(); });
+				addEventListener('error', function (e) { if (broken(e.error || e.message)) recover(); });
+				// abriu bem: libera a autocorreção para uma próxima vez
+				addEventListener('load', function () {
+					setTimeout(function () {
+						try { sessionStorage.removeItem(KEY); } catch (e) {}
+					}, 10000);
+				});
+			})();
+		</script>
+		<link href="./_app/immutable/entry/start.udnwja7x.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BMxEtXT4.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bio989WB.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DnOE-Xeg.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Cxt9GnHi.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.BrfJuaEZ.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.DMVGfmZ_.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C7iQW5jq.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DKnAV-xn.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bm_FopKx.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DYZzGHIS.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CJfnlYFE.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/20.C2bHXpSU.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BEUyxKYV.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BhklwuUi.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CvxCZfd6.js" rel="modulepreload">
+		
+		<link href="./_app/immutable/assets/0.ANEQZZ6A.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PinInput.Bf6kbclk.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PhraseInput.DftWfIGL.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_cvyx82 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						version: "1792698629505",
+						assets: "/lerolero"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("./_app/immutable/entry/start.udnwja7x.js").then(async (kit) => {
+						kit.init(__sveltekit_cvyx82);
+						const app = await import("./_app/immutable/entry/app.BrfJuaEZ.js");
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = './service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised, { type: 'module' });
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

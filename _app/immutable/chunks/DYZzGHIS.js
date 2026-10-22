@@ -1,0 +1,1 @@
+var e=`lerolero.convitePendente`;function t(t){try{t&&sessionStorage.setItem(e,t)}catch{}}function n(){try{let t=sessionStorage.getItem(e)??void 0;return sessionStorage.removeItem(e),t}catch{return}}export{n,t};

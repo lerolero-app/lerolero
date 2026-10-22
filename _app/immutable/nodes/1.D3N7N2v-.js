@@ -1,0 +1,1 @@
+import{H as e,K as t,W as n,ct as r,lt as i,rt as a,ut as o,vt as s,yt as c}from"../chunks/DnOE-Xeg.js";import{t as l}from"../chunks/Cxt9GnHi.js";import"../chunks/Bm_FopKx.js";var u=t(`<h1> </h1> <p> </p>`,1);function d(t,d){c(d,!0);var f=u(),p=r(f),m=i(p,!0),h=o(p,2),g=i(h,!0);a(()=>{e(m,l.status),e(g,l.error?.message)}),n(t,f),s()}export{d as component};
