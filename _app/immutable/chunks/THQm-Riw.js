@@ -1,1 +1,0 @@
-var e=`https://capaca.github.io/lerolero/convite#nprofile1qy2hwumn8ghj7ct4w35zumn0wd68yvfwvdhk6qghwaehxw309aex2mrp0yhx6mmwdaehgu3wvdhk6qg5waehxw309aex2mrp0yhxumtpd9kzumrfqqs9ncqkt3ya896g898q4j372a9v5wmkyj06hme4ujjmf5lg67jaq4qdnufde&n=Capa%C3%A7a`,t=`Lero-lero (comentários)`;export{e as n,t};

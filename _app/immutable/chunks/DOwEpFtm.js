@@ -1,1 +1,0 @@
-import{t as e}from"./BvZj8L37.js";var t=((t={},n={})=>(n.locale??e(),`Os dois PINs não são iguais.`));export{t};

@@ -1,1 +1,0 @@
-import{H as e,K as t,W as n,lt as r,rt as i,st as a,ut as o,w as s,xt as c}from"./DnOE-Xeg.js";import{t as l}from"./SroLlfWU.js";var u=t(`<p class="back svelte-ifjcm1"><a class="svelte-ifjcm1"><!><span> </span></a></p>`);function d(t,d){var f=u(),p=a(f),m=a(p);l(m,{name:`back`,size:18});var h=o(m),g=r(h,!0);c(p),c(f),i(()=>{s(p,`href`,d.href),e(g,d.label)}),n(t,f)}export{d as t};

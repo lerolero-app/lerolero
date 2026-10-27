@@ -1,1 +1,0 @@
-import{t as e}from"./BvZj8L37.js";var t=((t={},n={})=>(n.locale??e(),`Digite o PIN de novo`)),n=((t={},n={})=>(n.locale??e(),`Seu nome`));export{t as n,n as t};
