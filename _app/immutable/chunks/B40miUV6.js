@@ -1,0 +1,1 @@
+import{dt as e}from"./DnOE-Xeg.js";import{t}from"./BvZj8L37.js";var n=e({current:t()}),r=()=>n.current,i=e=>e.split(/\*\*(.+?)\*\*/).map((e,t)=>({text:e,bold:t%2==1}));export{r as n,n as r,i as t};
