@@ -1,0 +1,1 @@
+import{t as e}from"./bWk9TeoK.js";var t=((t={},n={})=>(n.locale??e(),`Adicionar pessoas`));export{t};

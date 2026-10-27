@@ -1,0 +1,1 @@
+import{dt as e}from"./DUpNQKHD.js";import{t}from"./bWk9TeoK.js";var n=e({current:t()}),r=()=>n.current,i=e=>`@@${e}@@`,a=e=>e.split(/(\*\*.+?\*\*|@@[\w-]+@@)/).filter(Boolean).map(e=>e.startsWith(`@@`)?{icon:e.slice(2,-2)}:e.startsWith(`**`)?{text:e.slice(2,-2),bold:!0}:{text:e,bold:!1});export{a as i,r as n,n as r,i as t};
