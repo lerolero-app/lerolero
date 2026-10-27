@@ -1,0 +1,1 @@
+import{t as e}from"./C61PPgSL.js";var t=((t={},n={})=>(n.locale??e(),`Este grupo não está neste aparelho.`));export{t};
