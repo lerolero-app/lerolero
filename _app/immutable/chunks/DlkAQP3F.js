@@ -1,1 +1,0 @@
-import{H as e,K as t,W as n,bt as r,ct as i,lt as a,nt as o,ot as s,w as c}from"./Dvtgu6e1.js";import{t as l}from"./C8sS2QJz.js";var u=t(`<p class="back svelte-ifjcm1"><a class="svelte-ifjcm1"><!><span> </span></a></p>`);function d(t,d){var f=u(),p=s(f),m=s(p);l(m,{name:`back`,size:18});var h=a(m),g=i(h,!0);r(p),r(f),o(()=>{c(p,`href`,d.href),e(g,d.label)}),n(t,f)}export{d as t};
