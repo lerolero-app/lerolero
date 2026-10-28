@@ -1,0 +1,1 @@
+import{t as e}from"./bWk9TeoK.js";var t=((t={},n={})=>(n.locale??e(),`Áudio`)),n=((t={},n={})=>(n.locale??e(),`Foto`));export{t as n,n as t};
