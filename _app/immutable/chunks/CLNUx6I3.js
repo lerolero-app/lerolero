@@ -1,0 +1,1 @@
+var e={normal:100,grande:120,muito_grande:140},t=`lerolero:tamanho-da-letra`;function n(){try{let n=localStorage.getItem(t);if(n&&n in e)return n}catch{}return`normal`}function r(t){document.documentElement.style.fontSize=`${e[t]}%`}function i(e){try{localStorage.setItem(t,e)}catch{}r(e)}export{n,i as r,r as t};
