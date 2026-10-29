@@ -1,0 +1,1 @@
+import{J as e,K as t,St as n,W as r,ct as i,dt as a,it as o,ut as s,w as c}from"./CaUqQUUi.js";import{t as l}from"./CgHBNwgA.js";var u=e(`<p class="back svelte-ifjcm1"><a class="svelte-ifjcm1"><!><span> </span></a></p>`);function d(e,d){var f=u(),p=i(f),m=i(p);l(m,{name:`back`,size:18});var h=a(m),g=s(h,!0);n(p),n(f),o(()=>{c(p,`href`,d.href),r(g,d.label)}),t(e,f)}export{d as t};
