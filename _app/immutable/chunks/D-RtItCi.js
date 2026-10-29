@@ -1,0 +1,1 @@
+import{t as e}from"./bWk9TeoK.js";var t=((t={},n={})=>(n.locale??e(),`Seu nome`));export{t};

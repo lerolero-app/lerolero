@@ -1,0 +1,1 @@
+import{t as e}from"./bWk9TeoK.js";var t=((t={},n={})=>(n.locale??e(),`Digite o PIN de novo`));export{t};
