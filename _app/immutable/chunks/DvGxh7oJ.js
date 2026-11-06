@@ -1,0 +1,1 @@
+import{t as e}from"./p_jwiIjW.js";var t=((t={},n={})=>(n.locale??e(),`Escolher foto`)),n=((t={},n={})=>(n.locale??e(),`Trocar foto`));export{t as n,n as t};
