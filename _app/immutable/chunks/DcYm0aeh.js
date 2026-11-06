@@ -1,1 +1,0 @@
-import{t as e}from"./tmryvhWB.js";var t=((t={},n={})=>(n.locale??e(),`Este grupo não está neste aparelho.`));export{t};

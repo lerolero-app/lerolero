@@ -1,1 +1,0 @@
-import{t as e}from"./tmryvhWB.js";var t=((t={},n={})=>(n.locale??e(),`Convidar alguém`));export{t};
