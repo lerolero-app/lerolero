@@ -1,1 +1,0 @@
-import{ft as e}from"./Ccjb1f6y.js";import{t}from"./vzhGBCcH.js";var n=e({current:t()}),r=()=>n.current,i=e=>`@@${e}@@`,a=e=>e.split(/(\*\*.+?\*\*|@@[\w-]+@@)/).filter(Boolean).map(e=>e.startsWith(`@@`)?{icon:e.slice(2,-2)}:e.startsWith(`**`)?{text:e.slice(2,-2),bold:!0}:{text:e,bold:!1});export{a as i,r as n,n as r,i as t};

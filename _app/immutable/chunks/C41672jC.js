@@ -1,1 +1,0 @@
-import{t as e}from"./vzhGBCcH.js";var t=((t={},n={})=>(n.locale??e(),`Escolher foto`)),n=((t={},n={})=>(n.locale??e(),`Trocar foto`));export{t as n,n as t};
