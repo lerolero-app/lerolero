@@ -1,0 +1,1 @@
+import{n as e}from"./DMUrqD95.js";var t=((t={},n={})=>(n.locale??e(),`Grupo`));export{t};
