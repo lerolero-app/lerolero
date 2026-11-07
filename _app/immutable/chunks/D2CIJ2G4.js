@@ -1,1 +1,0 @@
-import{t as e}from"./p_jwiIjW.js";var t=((t,n={})=>(n.locale??e(),`${t?.pagina} · Lero-lero`));export{t};
