@@ -1,0 +1,1 @@
+import{n as e}from"./DeX1srdL.js";var t=((t={},n={})=>(n.locale??e(),`Escolher foto`)),n=((t={},n={})=>(n.locale??e(),`Trocar foto`));export{t as n,n as t};
