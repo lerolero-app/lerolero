@@ -1,1 +1,0 @@
-import{n as e}from"./DeX1srdL.js";var t=((t={},n={})=>(n.locale??e(),`Ele protege sua conta neste aparelho e é pedido sempre que você abre o app. Evite datas de aniversário e 123456.`));export{t};
