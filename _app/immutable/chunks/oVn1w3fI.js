@@ -1,1 +1,0 @@
-import{n as e}from"./DMUrqD95.js";var t=((t={},n={})=>(n.locale??e(),`Crie um PIN de 6 números`)),n=((t={},n={})=>(n.locale??e(),`Digite o PIN de novo`));export{t as n,n as t};
