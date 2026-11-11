@@ -1,0 +1,1 @@
+import{n as e}from"./e05Kihqb.js";var t=((t={},n={})=>(n.locale??e(),`Ele protege sua conta neste aparelho e é pedido sempre que você abre o app. Evite datas de aniversário e 123456.`));export{t};

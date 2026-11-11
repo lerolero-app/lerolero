@@ -1,0 +1,1 @@
+import{n as e}from"./e05Kihqb.js";var t=((t={},n={})=>(n.locale??e(),`Adicionar pessoas`));export{t};
